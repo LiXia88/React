@@ -1,7 +1,16 @@
-import Like from "./components/Like";
+import { useState } from "react";
+import NavBar from "./components/NavBar";
+import Cart from "./components/Cart";
 
 function App() {
-  return <Like onClick={() => console.log("Clicked")}></Like>;
+  const [cartItems, setCartItems] = useState(["Xbox", "Switch"]);
+
+  return (
+    <div>
+      <NavBar cartItemsCount={cartItems.length} />
+      <Cart cartItems={cartItems} onClear={() => setCartItems([])} />
+    </div>
+  );
 }
 
 export default App;
