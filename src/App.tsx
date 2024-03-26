@@ -1,14 +1,10 @@
-import { useState } from "react";
-import NavBar from "./components/NavBar";
-import Cart from "./components/Cart";
-
+import ExpandableText from "./components/ExpandableText";
 function App() {
-  const [cartItems, setCartItems] = useState(["Xbox", "Switch"]);
-
   return (
     <div>
-      <NavBar cartItemsCount={cartItems.length} />
-      <Cart cartItems={cartItems} onClear={() => setCartItems([])} />
+      <ExpandableText>
+        Hello World, I'm luffy, the man who will become the king of pirate!
+      </ExpandableText>
     </div>
   );
 }
