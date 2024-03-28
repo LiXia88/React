@@ -1,10 +1,9 @@
-import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
+
 function App() {
   return (
     <div>
-      <ExpandableText>
-        Hello World, I'm luffy, the man who will become the king of pirate!
-      </ExpandableText>
+      <Form />
     </div>
   );
 }
